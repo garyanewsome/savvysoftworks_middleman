@@ -1,0 +1,60 @@
+@import "materialize";
+
+$body: #EFEFEF;
+$container: #EFEFEF;
+$maintext: #000000;
+$alttext: #000078;
+$footer: #FFFFFF;
+
+h1{
+  text-align: left;
+}
+
+img{
+  margin-top: 4px;
+}
+
+
+body{
+  background-color: $body
+
+}
+
+.container{
+  font-family: Ubuntu, sans-serif;
+  background-color: $container;
+  //border-style: outset;
+  //border-width: 1px;
+  //border-color: $alttext;
+  padding: 16px;
+}
+
+.header{
+  //font-family: Georgia, "Times New Roman", serif;
+  padding-top: 8px;
+}
+
+.contact{
+  color: $maintext;
+}
+
+.calltoaction{
+  text-align: center;
+  color: $alttext;
+}
+
+.slider .slides{
+  background-color: white;
+}
+
+a{
+  color: #0000FF;
+}
+
+footer{
+  text-align: center;
+}
+
+a:hover{
+  font-style: italic;
+}

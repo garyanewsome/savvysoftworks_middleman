@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SavvySoftWorks</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <%= stylesheet_link_tag 'styles' %>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="images/SSWfav.ico" />
+</head>
+
+<body>
+<div class="container">
+  <div class="row header">
+    <div class="logo col s12 m3 l9">
+      <h1>SavvySoftWorks</h1>
+    </div>
+    <div class="col s12 m4 l3">
+        <p>Paul Scarrone<br/>
+        <a href="tel:+4125599224">412-559-9224</a><br>
+        <a href="mailto:paul@savvysoftworks.com">paul@savvysoftworks.com</a><br>
+        <a target="_blank" href="https://twitter.com/paulscoder" target="_blank">
+          <img src="images/64pxtwitterwhite.png" alt="www.twitter.com/paulscoder" height="32" width="32">
+        </a>
+        &nbsp
+        <a href="https://www.linkedin.com/in/scarronp" target="_blank">
+          <img src="images/In-2C-34px-R.png" alt="www.linkedin.com/in/scarronp" height="32" width="43">
+        </a>
+        </p>
+    </div>
+  </div>
+
+  <div class="calltoaction">
+    <h5>Solving problems and maturing your development team.</h5>
+    <br/>
+  </div>
+       
+    <div class="row"
+      <div class="col 12">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="images/rday1_slide.png">
+              <div class="caption left-align black-text">
+                <h3>Lead with Cornerstone</h3>
+                <h5>ReadyDayOne</h5>
+                <p class="black-text">Management training software</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/am.png">
+              <div class="caption right-align black-text">
+                <h3>Additive Manufacturing</h3>
+                <h5>Curriculum Development</h5>
+                <p class="black-text">3D Printing</p>
+              </div>
+            </li>
+            <li>
+              <img src="images/cemsites.png">
+              <div class="caption left-align black-text">
+                <h3>CemSites Enterprise</h3>
+                <h5>Senior Developer and Mentor</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="row">
+      <h5>SavvySoftWorks</h5>
+      <p>&copy 2016 Copyright</p>
+    </div>
+  </footer>
+      
+  <!--Import jQuery before materialize.js-->
+  <%= javascript_include_tag 'all' %>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+  </script>
+       
+
+</body>
+</html>
