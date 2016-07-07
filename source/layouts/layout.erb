@@ -11,14 +11,14 @@
   <link rel="icon" type="image/x-icon" href="images/SSWfav.ico" />
 </head>
 
-<body><!--
-  <div class="container">-->
+<body>
     <%= partial "header" %>
     <%= partial "navbar" %>
     <%= yield %>
     <%= partial "footer" %>
-  <!--</div>-->
-      
+
+    <a href="#top" class="btn returntotop" style="bottom: 16px; right: 16px;"><i class="material-icons left">navigation</i>return to top</a>     
+
   <%= javascript_include_tag 'all' %>     
   </div>
 </body>

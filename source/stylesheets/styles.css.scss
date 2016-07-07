@@ -78,10 +78,6 @@ body{
   padding: 0px;
 }
 
-.calltoaction{
-  text-align: center;
-}
-
 .slider .slides{
   background-color: white;
 }
@@ -96,5 +92,16 @@ a:hover{
 
 footer{
   text-align: center;
+}
+
+.returntotop {
+    position: fixed;
+    background-color: $maintext;
+    //width: 100%;
+}
+
+.returntotop:hover{
+  color: #FFFFFF;
+  background-color: $ahover;
 }
 
