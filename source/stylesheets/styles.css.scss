@@ -40,24 +40,14 @@
 @import "materialize/components/date_picker/default.time";
 
 $body: #FFFFFF;
-$maintext: #333333;
-$alttext: #000078;
+$maintext: #000078;
 $footer: #FFFFFF;
 $a: #000078;
-$ahover: #007777;
-
-h1{
-  text-align: left;
-}
-
-h4{
-  color: $alttext;
-}
+$ahover: #00AAAA;
 
 img{
   margin-top: 4px;
 }
-
 
 body{
   background-color: $body;
@@ -66,11 +56,12 @@ body{
 
 .container{
   font-family: Ubuntu, sans-serif;
+  padding: 8px;
   width: 100%;
 }
 
 .parallax-container {
-  height: 320px;
+  height: 400px;
 }
 
 .header{
@@ -89,7 +80,6 @@ body{
 
 .calltoaction{
   text-align: center;
-  color: $alttext;
 }
 
 .slider .slides{
@@ -102,13 +92,9 @@ a{
 
 a:hover{
   color: $ahover;
-  font-style: italic;
 }
 
 footer{
   text-align: center;
 }
 
-a:hover{
-  font-style: italic;
-}
