@@ -4,7 +4,9 @@
 $(".button-collapse").sideNav();
 
 $(document).ready(function(){
-  $('.slider').slider({full_width: true});
+  $('.slider').slider({full_width: true,
+    interval: 2500
+  });
   // parallax container
   $('.parallax').parallax();
   // init text area
@@ -26,3 +28,12 @@ $('a[href^="#"]').on('click', function(event) {
         }, 500);
     }
 });
+
+$('.slider').mouseover(function(){
+  $('.slider').slider('pause');
+})
+
+$('.slider').mouseout(function(){
+  // Start slider
+  $('.slider').slider('start');
+})

@@ -43,9 +43,15 @@ $body: #FFFFFF;
 $maintext: #333333;
 $alttext: #000078;
 $footer: #FFFFFF;
+$a: #000078;
+$ahover: #007777;
 
 h1{
   text-align: left;
+}
+
+h4{
+  color: $alttext;
 }
 
 img{
@@ -91,7 +97,12 @@ body{
 }
 
 a{
-  color: #0000FF;
+  color: $a;
+}
+
+a:hover{
+  color: $ahover;
+  font-style: italic;
 }
 
 footer{
