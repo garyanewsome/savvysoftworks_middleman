@@ -16,3 +16,7 @@ gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-sprockets', '~> 4.0.0'
 gem 'materialize-sass'
 gem 'middleman-jquery'
+
+gem 'pony', '~> 1.11'
+
+gem 'mailcatcher', '~> 0.6.1'
