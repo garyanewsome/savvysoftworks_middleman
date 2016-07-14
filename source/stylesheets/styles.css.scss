@@ -39,7 +39,7 @@
 @import "materialize/components/date_picker/default.date";
 @import "materialize/components/date_picker/default.time";
 
-$body: #FFFFFF;
+$body: #FEFEEF;
 $maintext: #000078;
 $footer: #FFFFFF;
 $a: #000078;
@@ -74,7 +74,7 @@ body{
 }
 
 .nav-wrapper{
-  background-color: #000078;
+  background-color: $maintext;
   padding: 0px;
 }
 
