@@ -2,6 +2,8 @@ require 'rubygems'
 require 'sinatra'
 require 'pony'
 
+set :port, 9494
+
 post '/' do
   name = params[:name]
   email = params[:email]
@@ -10,17 +12,14 @@ post '/' do
   @time = Time.now.getutc
 
   Pony.mail(:to => 'paul@savvysoftworks.com',
-            :from => "#{mail}",
+            :from => email,
             :subject => "Contact from #{name}, #{@time}",
-            :body => "#{textarea1}",
+            :body => body,
             :via => :smtp,
-            :via_options => {
-            :address        => 'smtp.yourserver.com',
-            :port           => '25',
-            :user_name      => 'user',
-            :password       => 'password',
-            :authentication => :plain, # :plain, :login, :cram_md5, no auth by default
-            :domain         => "localhost.localdomain" # the HELO domain provided by the client to the server
+            :via_options =>{
+              :address => 'smtp://127.0.0.1:1025',
+              :port => '1025'
+            }
   )
 
 
