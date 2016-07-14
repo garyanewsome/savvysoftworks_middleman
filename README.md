@@ -2,4 +2,4 @@
 
 page preview available at:
 
-[SavvySoftWorks](garyanewsome.github.io/savvysoftworks_middleman)
+[SavvySoftWorks](https://garyanewsome.github.io/savvysoftworks_middleman)
