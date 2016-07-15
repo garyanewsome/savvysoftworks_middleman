@@ -11,19 +11,22 @@
     <table>
       <tr>
         <td>Name:</td>
-        <td>@form_data['name']</td>
+        <td><%= @form_data['name'] %></td>
       </tr>
       <tr>
         <td>Email:</td>
-        <td>@form_data['email']</td>
+        <td><%= @form_data['email'] %></td>
       </tr>
       <tr>
         <td>Message</td>
       </tr>
       <tr>
-        <td>@form_data['textarea1']</td>
+        <td><%= @form_data['textarea1'] %></td>
       </tr>
     </table>
   </content>
+  <footer>
+    <p><%= @time %></p>
+  </footer>
 </body>
 </html>
