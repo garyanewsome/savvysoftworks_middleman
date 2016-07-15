@@ -39,7 +39,7 @@
 @import "materialize/components/date_picker/default.date";
 @import "materialize/components/date_picker/default.time";
 
-$body: #FEFEEF;
+$body: #F5F5F5;
 $maintext: #000078;
 $footer: #FFFFFF;
 $a: #000078;
@@ -116,6 +116,7 @@ footer{
   padding: 10px 0;
   text-align: center;
   width: 100%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
 
 .rslides_tabs li {
@@ -149,3 +150,5 @@ footer{
     font-size: 2em;
     text-align: center;
   }
+
+
