@@ -17,8 +17,3 @@ gem 'middleman-gh-pages'
 gem 'middleman-sprockets', '~> 4.0.0'
 gem 'materialize-sass'
 gem 'middleman-jquery'
-
-gem 'activesupport'
-gem 'actionmailer'
-
-gem 'mailcatcher', '~> 0.6.1'
