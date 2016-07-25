@@ -3,6 +3,7 @@
   <div class="row">
     <form class="col s12" action="http://localhost:9494" method="post">
       <div class="row">
+      <input type="hidden" name="redirect" value="#top">
         <div class="input-field col s6">
           <i class="material-icons prefix">perm_identity</i>
           <input id="name" name="name" type="text" class="validate">
@@ -21,7 +22,7 @@
           <label for="textarea1">Textarea</label>
         </div>
       </div>
-      <button class="btn waves-effect waves-light submit" type="submit" name="action">Submit
+      <button id="submit" class="btn waves-effect waves-light submit" type="submit" name="action">Submit
         <i class="material-icons right">send</i>
       </button>
     </form>

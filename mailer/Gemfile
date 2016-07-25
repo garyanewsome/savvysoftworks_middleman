@@ -10,3 +10,5 @@ gem 'sinatra', github: 'sinatra/sinatra'
 gem 'rake'
 
 gem 'byebug'
+
+gem 'mailcatcher'
