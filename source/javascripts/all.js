@@ -60,8 +60,8 @@ $('rslides').mouseout(function(){
 })
 
 // redirect after form submit
-$('.submit').click(function() {
-  alert('Thank you, we will be in touch shortly!')
-  window.location = '#top'
-});
+// $('.submit').click(function() {
+//   alert('Thank you, we will be in touch shortly!')
+//   window.location = '#top'
+// });
 

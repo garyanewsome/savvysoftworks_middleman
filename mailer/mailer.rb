@@ -3,6 +3,8 @@ require 'active_support'
 require 'active_support/core_ext/object/blank.rb'
 require 'action_mailer'
 
+enable :sessions
+
 set :port, 9494
 
 ActionMailer::Base.raise_delivery_errors = true
@@ -40,5 +42,6 @@ end
 
 post '/' do
   Mailer.new.notification(params).deliver
- 
+  
+  redirect 'http://localhost:4567/#contact'
 end
