@@ -35,7 +35,7 @@ $(document).ready(function(){
     //namespace: "rslides",   // String: Change the default namespace used
     //before: function(){},   // Function: Before callback
     //after: function(){}     // Function: After callback
-  }); 
+  });
 });
 
 // jQuery Scroll Animations
@@ -59,9 +59,5 @@ $('rslides').mouseout(function(){
   $('rslides').slider('start');
 })
 
-// redirect after form submit
-// $('.submit').click(function() {
-//   alert('Thank you, we will be in touch shortly!')
-//   window.location = '#top'
-// });
+
 
