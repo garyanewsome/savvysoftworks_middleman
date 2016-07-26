@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/garyanewsome/savvysoftworks_middleman#readme",
   "dependencies": {
+    "cornerstone-event-components": "git+ssh://git@bitbucket.org/thecodeavengers/inlinecomponents.git",
     "moment": "^2.14.1"
   }
 }
