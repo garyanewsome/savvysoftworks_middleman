@@ -1,7 +1,12 @@
 require 'sinatra'
+require 'sinatra/json'
+require 'sinatra/cross_origin'
+require 'sinatra/jsonp'
 require 'active_support'
 require 'active_support/core_ext/object/blank.rb'
 require 'action_mailer'
+require 'uri'
+require 'base64'
 
 enable :sessions
 
@@ -29,10 +34,10 @@ class Mailer < ActionMailer::Base
   layout false
 
   def notification(form_data)
-    
+
     @form_data = form_data
     @time = Time.now.getutc
-    
+
     mail(to: 'paul@savvysoftworks.com',
          subject: "New message from #{@form_data['email']}",
          template_path: 'mailer',
@@ -40,8 +45,23 @@ class Mailer < ActionMailer::Base
   end
 end
 
+configure do
+  enable :cross_origin
+end
+
 post '/' do
-  Mailer.new.notification(params).deliver
-  
+  Mailer.notification(params).deliver
+
   redirect 'http://localhost:4567/#contact'
+end
+
+get '/' do
+  payloadStr = Base64.decode64(params['payload'])
+  puts payloadStr
+
+  payload = Rack::Utils.parse_nested_query payloadStr
+  puts payload.inspect
+
+  Mailer.notification(payload)
+  jsonp [{success: 'Message Sent'}], params['callback']
 end
