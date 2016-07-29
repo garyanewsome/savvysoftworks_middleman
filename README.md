@@ -4,6 +4,9 @@ page preview available at:
 
 [https://garyanewsome.github.io/savvysoftworks_middleman](https://garyanewsome.github.io/savvysoftworks_middleman)
 
+### Depends On
+[https://bitbucket.org/thecodeavengers/inlinecomponents/pull-requests/2/pks-jsonp_all_the_things/diff](Depends on https://bitbucket.org/thecodeavengers/inlinecomponents/pull-requests/2/pks-jsonp_all_the_things/diff)
+
 ### Setup
 
 SavvySoftWorks homepage built with [https://middlemanapp.com/](https://middlemanapp.com/) and [http://materializecss.com/](http://materializecss.com/)
@@ -22,7 +25,6 @@ mailer.rb uses actionmailer and active support gems.
 
 ### Mailcatcher
 [https://mailcatcher.me/](https://mailcatcher.me/)
-Installed on system, not in gem file.
 
 Launch from terminal with `mailcatcher` open a browser to `http://127.0.0.1:1080`
 
