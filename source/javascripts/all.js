@@ -1,5 +1,8 @@
 //= require jquery
 //= require materialize-sprockets
+//= require moment/min/moment.min
+//= require cornerstone-event-components/dist/commons
+//= require cornerstone-event-components/dist/forms.component
 
 $(".button-collapse").sideNav();
 
