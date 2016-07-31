@@ -55,7 +55,7 @@ body{
 }
 
 .container{
-  font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
   padding: 8px;
   width: 100%;
 }
@@ -65,7 +65,6 @@ body{
 }
 
 .header{
-  //font-family: Georgia, "Times New Roman", serif;
   padding-top: 8px;
 }
 
@@ -116,7 +115,7 @@ footer{
   padding: 10px 0;
   text-align: center;
   width: 100%;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   }
 
 .rslides_tabs li {
