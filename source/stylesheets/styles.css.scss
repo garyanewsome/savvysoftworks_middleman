@@ -151,4 +151,20 @@ footer{
     text-align: center;
   }
 
+.current h5 {
+  padding-top: 1em;
+  padding-left: 1em;
+  margin: 0;
+}
+
+.current h6{
+  padding-left: 2em;
+  font-weight: bold;
+}
+
+.collapsible-body {
+  // background-color: lighten($body, 1%);
+  background-color: $maintext;
+  color: $body;
+}
 
