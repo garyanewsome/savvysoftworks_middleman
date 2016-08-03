@@ -49,12 +49,18 @@ img{
   margin-top: 4px;
 }
 
-body{
+body {
   background-color: $body;
   color: $maintext;
 }
 
-.container{
+.container {
+  font-family: Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
+  padding: 8px;
+  width: 80%;
+}
+
+.slide_container {
   font-family: Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
   padding: 8px;
   width: 100%;
