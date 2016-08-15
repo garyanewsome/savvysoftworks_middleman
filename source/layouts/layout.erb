@@ -5,16 +5,16 @@
   <meta name="keywords" content="SavvySoftWorks, Paul Scarrone, software, web, applications, apps, websites, webpages, problem, solving, solutions, custom, growth, education, development, programming, Ruby, Rails, Laravel, JavaScript, AngularJS, ReactJS, Node">
   <title>SavvySoftWorks</title>
   <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <!--Import responsiveslides.css-->
   <%= stylesheet_link_tag 'responsiveslides' %>
   <!--Import materialize.css-->
-  <%= stylesheet_link_tag 'styles' %>
+  <%= stylesheet_link_tag 'application' %>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" type="image/x-icon" href="images/SSWfav.ico" />
 
-  
+
 
 </head>
 
@@ -24,7 +24,7 @@
     <%= yield %>
     <%= partial "footer" %>
 
-    <a href="#top" class="btn returntotop" style="bottom: 16px; right: 16px;"><i class="material-icons left">navigation</i>return to top</a>     
+    <a href="#top" class="btn returntotop" style="bottom: 16px; right: 16px;"><i class="material-icons left">navigation</i>return to top</a>
 
   <%= javascript_include_tag 'all' %>
   <%= javascript_include_tag 'responsiveslides' %>
