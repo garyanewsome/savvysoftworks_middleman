@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+
 // Mixins
 // @import "components/prefixer";
 @import "materialize/components/mixins";
@@ -39,6 +42,90 @@
 @import "materialize/components/date_picker/default.date";
 @import "materialize/components/date_picker/default.time";
 
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('../assets/material-design-icons/iconfont/MaterialIcons-Regular'),
+       url(../assets/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../assets/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(../assets/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+  &.md-18{font-size: 18px;}
+  &.md-24{font-size: 24px;}
+  &.md-36{font-size: 36px;}
+  &.md-48{font-size: 48px;}
+}
+
+.has-shadow {
+  box-shadow: 0px 9px 7px 0px rgba(50, 50, 50, 0.6);
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.section-title {
+  font-family: 'Oxygen', cursive;
+}
+
+.parallax-container {
+  box-shadow: inset 0px -9px 7px 0px rgba(50, 50, 50, 0.6);
+}
+
+.nav-wrapper {
+  box-shadow: 0px 9px 7px 0px rgba(50, 50, 50, 0.6);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.material-icons.md-18 {
+  font-size: 18px; }
+.material-icons.md-24 {
+  font-size: 24px; }
+.material-icons.md-36 {
+  font-size: 36px; }
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.current_clients {
+  .collapsible-header {
+    font-weight: 700;
+  }
+  h5 {
+    color: #FCFEFC;
+  }
+}
+
 $body: #F5F5F5;
 $maintext: #000078;
 $footer: #FFFFFF;
@@ -54,14 +141,20 @@ body {
   color: $maintext;
 }
 
+.logo {
+  h1 {
+    font-family: Oxygen, cursive;
+  }
+}
+
 .container {
-  font-family: Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
+  font-family: Oxygen, Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
   padding: 8px;
   width: 80%;
 }
 
 .slide_container {
-  font-family: Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
+  font-family: Oxygen, Ubuntu, "Trebuchet MS", Helvetica, sans-serif;
   padding: 8px;
   width: 100%;
 }
@@ -150,11 +243,11 @@ footer{
   font-weight: bold;
   }
 
-  .caption {
-    color: $maintext;
-    font-size: 2em;
-    text-align: center;
-  }
+.caption {
+  color: $maintext;
+  font-size: 2em;
+  text-align: center;
+}
 
 .current h5 {
   padding-top: 1em;

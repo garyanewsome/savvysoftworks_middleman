@@ -1,4 +1,6 @@
-activate :sprockets
+activate :sprockets do |c|
+  c.expose_middleman_helpers = true
+end
 
 ###
 # Page options, layouts, aliases and proxies

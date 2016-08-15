@@ -18,6 +18,7 @@
   "homepage": "https://github.com/garyanewsome/savvysoftworks_middleman#readme",
   "dependencies": {
     "cornerstone-event-components": "git+ssh://git@bitbucket.org/thecodeavengers/inlinecomponents.git#pks/jsonp_all_the_things",
+    "material-design-icons": "^2.2.3",
     "moment": "^2.14.1"
   }
 }
