@@ -122,7 +122,13 @@
     font-weight: 700;
   }
   h5 {
+    padding-top: 1em;
+    padding-left: 1em;
+    margin: 0;
     color: #FCFEFC;
+  }
+  p {
+    color: #F5F5F5
   }
 }
 
@@ -262,17 +268,6 @@ footer{
   color: $maintext;
   font-size: 2em;
   text-align: center;
-}
-
-.current h5 {
-  padding-top: 1em;
-  padding-left: 1em;
-  margin: 0;
-}
-
-.current h6{
-  padding-left: 2em;
-  font-weight: bold;
 }
 
 .collapsible-body {
