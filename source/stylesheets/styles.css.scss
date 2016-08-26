@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
 
 // Mixins
 // @import "components/prefixer";
@@ -132,16 +133,19 @@ $ahover: #00AAAA;
     padding-top: 1em;
     padding-left: 1em;
     margin: 0;
-    color: #FCFEFC;
+    color: $body;
   }
+}
+
+.collapsible-body {
   h6 {
     padding-left: 1em;
   }
-  p {
-    color: darken($body, 10%);
-    font-weight: 200;
-    font-family: Oxygen, Ubuntu, Helvetica, sans-serif;
-    }
+  font-size: 1.1em;
+  background-color: $maintext;
+  color: darken($body, 5%);
+  font-weight: 300;
+  font-family: Quicksand, Oxygen, Ubuntu, Helvetica, sans-serif;
 }
 
 
@@ -275,11 +279,5 @@ footer{
   color: $maintext;
   font-size: 2em;
   text-align: center;
-}
-
-.collapsible-body {
-  // background-color: lighten($body, 1%);
-  background-color: $maintext;
-  color: $body;
 }
 
