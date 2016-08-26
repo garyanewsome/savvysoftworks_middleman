@@ -2,6 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
 
 // Mixins
 // @import "components/prefixer";
@@ -86,6 +87,12 @@
   &.md-48{font-size: 48px;}
 }
 
+$body: #F5F5F5;
+$maintext: #000078;
+$footer: #FFFFFF;
+$a: #000078;
+$ahover: #00AAAA;
+
 .has-shadow {
   box-shadow: 0px 9px 7px 0px rgba(50, 50, 50, 0.6);
   margin-bottom: 0;
@@ -127,16 +134,16 @@
     margin: 0;
     color: #FCFEFC;
   }
-  p {
-    color: #F5F5F5
+  h6 {
+    padding-left: 1em;
   }
+  p {
+    color: darken($body, 10%);
+    font-weight: 200;
+    font-family: Oxygen, Ubuntu, Helvetica, sans-serif;
+    }
 }
 
-$body: #F5F5F5;
-$maintext: #000078;
-$footer: #FFFFFF;
-$a: #000078;
-$ahover: #00AAAA;
 
 img{
   margin-top: 4px;
