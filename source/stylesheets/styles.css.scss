@@ -139,8 +139,18 @@ $ahover: #00AAAA;
 
 .collapsible-body {
   h6 {
-    padding-left: 1em;
+    padding-left: 2em;
+    font-size: 1.1em;
   }
+  p {
+    padding-left: 3em;
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+  a {
+    color: $body;
+  }
+
   font-size: 1.1em;
   background-color: $maintext;
   color: darken($body, 5%);
@@ -286,3 +296,4 @@ footer{
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
