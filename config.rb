@@ -2,6 +2,12 @@ activate :sprockets do |c|
   c.expose_middleman_helpers = true
 end
 
+activate :blog do |blog|
+  blog.prefix = 'blog'
+  blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.permalink = "{category}/{title}.html"
+end
+
 ###
 # Page options, layouts, aliases and proxies
 ###
