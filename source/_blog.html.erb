@@ -2,10 +2,10 @@
   <div class="row">
       <% blog.articles[0...4].each do |article| %>
         <article class="col s12 m6" style="padding-right: 2em;">
-          <h1>
+          <h3>
             <a href="<%= article.url %>"><%= article.title %></a>
-            <time><%= article.date.strftime('%b %e %Y') %></time>
-          </h1>
+          </h3>
+          <time><%= article.date.strftime('%b %e %Y') %></time>
 
           <%= article.summary %>
 
