@@ -172,6 +172,9 @@ body {
   h1 {
     font-family: Oxygen, cursive;
   }
+  a:hover {
+    color: $maintext;
+  }
 }
 
 .headinfo {
