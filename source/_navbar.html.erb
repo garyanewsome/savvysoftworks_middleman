@@ -2,18 +2,20 @@
   <div class="nav-wrapper">
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#current_clients">Current Clients</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#team">Our Team</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#about">About</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#blog">Blog</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#current_clients">Current Clients</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#products">Products</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#team">Our Team</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#contact">Contact Us</a></li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#current_clients">Current Clients</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#team">Our Team</a></li>
-      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#about">About Us</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#blog">About</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#current_clients">Current Clients</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#products">Products</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#team">Our Team</a></li>
+      <li><a href="<%= current_page.path == 'index.html' ? '' : '/' %>#contact">Contact Us</a></li>
     </ul>
   </div>
 </nav>

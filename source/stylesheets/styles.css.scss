@@ -183,7 +183,7 @@ body {
     font-size: 1.1em;
     text-align: right;
   }
-  
+
 }
 
 .container {
@@ -300,3 +300,6 @@ footer{
   margin-bottom: 1em;
 }
 
+.blog article img {
+  max-width: 100%;
+}
